@@ -41,6 +41,8 @@ namespace ncore.a1
             }
 
             app.UseHttpsRedirection();
+            // use static files - js,css,images
+            app.UseStaticFiles();
             app.UseMvc();
         }
     }
