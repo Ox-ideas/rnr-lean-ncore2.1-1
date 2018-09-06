@@ -1,3 +1,6 @@
 # custom exclude
 node_modules/
 vendors/
+bin/
+obj/
+wwwroot/
