@@ -1,6 +1,19 @@
 # custom exclude
+
+# packages
 node_modules/
 vendors/
-bin/
-obj/
+# build results
+[Bb]in/
+[Oo]bj/
+# auto create with webpack
 wwwroot/
+# dnx
+project.lock.json
+# click once dir
+publish/
+# Visual Studio cache files
+# files ending in .cache can be ignored
+*.[Cc]ache
+# but keep track of directories ending in .cache
+!*.[Cc]ache/
