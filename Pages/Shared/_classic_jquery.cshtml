@@ -1,0 +1,17 @@
+@{
+    Layout = "_Layout";
+}
+
+@RenderBody()
+
+@section scripts 
+{
+    <environment names="Development">
+        <script src="~/js/classic_jquery.js"></script>
+    </environment>
+    <environment names="Staging,Production">
+        <script src="~/js/classic_jquery.js" asp-append-version="true"></script>
+    </environment>
+
+    @RenderSection("scripts", required: false)
+}
