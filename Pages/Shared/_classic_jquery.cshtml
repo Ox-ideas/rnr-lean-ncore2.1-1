@@ -7,10 +7,10 @@
 @section scripts 
 {
     <environment names="Development">
-        <script src="~/js/classic_jquery.js"></script>
+        <script src="~/js/classic_jquery.bundle.js"></script>
     </environment>
     <environment names="Staging,Production">
-        <script src="~/js/classic_jquery.js" asp-append-version="true"></script>
+        <script src="~/js/classic_jquery.bundle.js" asp-append-version="true"></script>
     </environment>
 
     @RenderSection("scripts", required: false)
