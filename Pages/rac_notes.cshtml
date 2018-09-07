@@ -1,0 +1,17 @@
+@page
+@{
+    Layout = "Shared/_Layout.cshtml";
+    ViewData["Title"] = "React Notes";
+}
+
+<div id="react-notes-app"></div>
+
+@section scripts
+{
+    <environment names="Development">
+        <script src="~/js/react_notes.bundle.js"></script>
+    </environment>
+    <environment names="Staging,Production">
+        <script src="~/js/react_notes.bundle.js" asp-append-version="true"></script>
+    </environment>
+}
