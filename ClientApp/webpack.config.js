@@ -7,7 +7,9 @@ module.exports = (env = {}, argv = {}) => {
   const config = {
     mode: argv.mode || 'development', // we default to development when no 'mode' arg is passed
     entry: {
-      main: './js/app-1.js'
+      main: './js/app-1.js',
+      classic_jquery: './js/classic_jquery.js',
+      react_notes: './js/rac_notes.js'
     }, 
     output: {
       filename: 'js/[name].bundle.js',
