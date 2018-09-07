@@ -10,6 +10,10 @@
 
     <link rel="icon" href="~/img/favicon.ico" type="image/x-icon">
 
+    <environment names="Development">
+        <link rel="stylesheet" href="~/css/main.bundle.css" asp-append-version="true" />
+    </environment>
+
     <environment names="Staging,Production">
         <link rel="stylesheet" href="~/css/main.bundle.css" asp-append-version="true" />
     </environment>
