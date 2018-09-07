@@ -16,7 +16,7 @@
 
   <Target Name="EnsureNodeModules" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('$(ClientAppFolder)\node_modules') ">
     <Message Importance="high" Text="Restoring dependencies using 'npm'. This may take several minutes..." />
-    <Exec WorkingDirectory="$(ClientAppFolder)" Command="npm install" />
+    <Exec WorkingDirectory="$(ClientAppFolder)" Command="yarn install" />
   </Target>
 
   <Target Name="BuildClientAssets" AfterTargets="ComputeFilesToPublish">
